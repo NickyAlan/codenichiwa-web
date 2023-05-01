@@ -1,0 +1,333 @@
+@font-face {
+  font-family: 'cubano';
+  src: url("Cubano.ttf")
+}
+
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'cubano', sans-serif;
+    font-weight: 500;
+}
+
+:root {
+  --input: #f7f6f7;
+  --btn1: #f7d5d5;
+  --btn2: #ee3131;
+  --btn3: #374347;
+}
+
+
+body,html {
+    width: 100%;
+}
+
+#caption-h1 {
+    margin-top: 4rem;
+    margin-bottom: 1.4rem;
+    font-size: 2rem;
+    font-family: 'cubano';
+    text-align: center;
+}
+
+#error {
+  margin: 1rem 0;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #c62a2a;
+}
+
+.input-url-caption {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.input-url-caption input {
+    font-size: 1.2rem;
+    padding: 1rem;
+    border: 0;
+}
+
+#urlInput {              
+    background: var(--input);
+    width: 41ch;
+    border-radius: 5px 0 0 5px;
+}
+
+.btn-input {
+  display: flex;
+}
+
+.btn-input button {
+    padding: 0 1.3rem;
+    cursor: pointer;
+    font-family: 'cubano';
+    background: var(--btn1);
+    font-size: 1.2rem;
+    padding: 1rem;
+    border: 0;
+}
+
+#convertBtn {
+    border-radius: 0 5px 5px 0;
+}
+
+.btn-input button:hover {
+    background: #f8dfdf;
+}
+
+/* loding-box and select-lang-caption*/
+.main-loading, .main-caption-show {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 7rem;
+}
+
+.loding-css {
+  display: none;
+  justify-content: center;
+}
+ 
+.select-lang-caption, .loding-box {
+    margin: 2rem 0;
+    width: 810px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.select-lang-image, .image-load-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.select-lang-image img, .image-load{
+    width: 426px;
+    height: 240px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.select-lang-image #title, .title-load {
+    width: 35ch;
+}
+
+.image-load {
+  background: var(--input);
+}
+
+.title-load, .btn1-load, .btn2-load {
+  height: 25px;
+  background: var(--input) !important;
+} 
+
+.select-lang-option, .btn-load {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.4rem;
+    text-align: center;
+}
+
+.select-lang-option *, .btn-load * {
+    font-size: 1.2rem;
+    width: 15ch;
+    padding: .4rem;
+    border-radius: 5px;
+}
+
+.select-lang-option * {
+    cursor: pointer;
+}
+
+#selectLang, .btn1-load {
+    text-align-last: center;
+    text-align: center;
+    border: 0;
+    background: var(--input);
+}
+
+
+#selectLangBtn, .btn2-load {
+    border: 0;
+    background: var(--btn3);
+    color: white;
+}
+
+#selectLangBtn:hover {
+    background: #3d2a2a;
+}
+
+#downloadBtn {
+    text-decoration: none;
+    background: #c62a2a;
+    color: white;
+}
+
+#downloadBtn:hover {
+    background: #d13232;
+}
+
+/* loading | reference -> https://loading.io/css/ */
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: var(--btn2);
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+
+/* small screen */
+@media only screen and (max-width: 768px) {
+  #urlInput {
+    width: 33ch;
+  }
+  .select-lang-caption, .loding-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .select-lang-image img, .image-load{
+    width: 335px;
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  #caption-h1 {
+    font-size: 1.5rem;
+  }
+  #urlInput, .input-url-caption button,
+  .select-lang-option *, .btn-load *, #title {
+    font-size: 1rem;
+  }
+  #urlInput {
+    width: 31ch;
+  }
+  #pasteBtn img, #convertBtn img {
+    width: 20px;
+    height: 20px;
+  }
+  #error {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 409px) {
+  #urlInput, .input-url-caption button,
+  .select-lang-option *, .btn-load *, #title {
+    font-size: .9rem;
+  }
+  .lds-ellipsis div {
+    width: 10px;
+    height: 10px;
+  }
+  #urlInput {
+    width: 28ch;
+  }
+  #pasteBtn img, #convertBtn img {
+    width: 19px;
+    height: 19px;
+  }
+  #caption-h1 {
+    margin-bottom: .8rem;
+  }
+}
+
+@media only screen and (max-width: 377px) {
+  #caption-h1 {
+    font-size: 1.3rem;
+  }
+  #urlInput, .input-url-caption button,
+  .select-lang-option *, .btn-load *, #title {
+    font-size: .8rem;
+  }
+  #pasteBtn img, #convertBtn img {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media only screen and (max-width: 348px) {
+  .select-lang-image img, .image-load{
+    width: calc(426px/1.4);
+    height: calc(240px/1.4);
+  }
+  .select-lang-image #title, .title-load {
+    width: 30ch;
+  }
+    .lds-ellipsis div {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+@media only screen and (max-width: 322px) {
+  #caption-h1 {
+    font-size: 1.2rem;
+  }
+  #urlInput, .input-url-caption button,
+  .select-lang-option *, .btn-load *, #title {
+    font-size: .7rem;
+  }
+  .select-lang-image img, .image-load{
+    width: calc(426px/1.5);
+    height: calc(240px/1.5);
+  }
+  .select-lang-image #title, .title-load {
+    width: 30ch;
+  }
+}

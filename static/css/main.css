@@ -5,5 +5,20 @@
 }
 
 body {
-    background: tomato;
+    background: white;
+}
+
+nav {
+    height: 10vh;
+    background: lightcoral;
+}
+
+.banner {
+    height: 20vh;
+    background: yellowgreen;
+}
+
+footer {
+   height: 10vh;
+   background: whitesmoke;
 }

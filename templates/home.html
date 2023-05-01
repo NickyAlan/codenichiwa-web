@@ -6,8 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Codenichiwa{% endblock %}</title>
     <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}"/>
+    {% block more_css %}{% endblock %}
 </head>
 <body>
-    
+    <nav>This is nav bar</nav>
+    {% block container %}
+    <div class="banner">this is container</div>
+    {% endblock %}
+    <footer>sometext-in footer</footer>
 </body>
 </html>
