@@ -1,0 +1,33 @@
+{% extends "home.html" %} 
+{% block title %}LangStuff{% endblock %}
+{% block more_css %}
+<link rel="stylesheet" href="{{url_for('static',filename='css/lang-convert.css')}}"/>
+{% endblock %}
+
+{% block container %}
+<div class="main-container">
+    <div class="container">
+      <h1 id="h1Tag">Romanji to Hiragana</h1>
+      <div id="searchField">
+        <select id="selectBtn">
+          <option value="R2H">Romanji to Hiragana</option>
+          <option value="R2K">Romanji to Katakana</option>
+          <option value="G">Grammar Checker</option>
+        </select>
+        <input id="inputText" type="text" placeholder="type here" spellcheck="false">
+        <button id="clearBtn">x</button>
+        <button id="pasteBtn">p</button>
+        <button id="convertBtn">></button>
+      </div>
+      <div class="loadingDiv" id="loadingDiv" style="display: none;">
+        <div></div>
+      </div>
+      <div id="answerDiv"></div>
+      <div class="textInfo">
+        <span id="G" style="display: none;">enter to check</span>
+        <span id="C" style="display: none;">click to copy</span>
+      </div>
+    </div>
+</div>
+    <script src="{{url_for('static',filename='js/lang-convert.js')}}"></script>
+{% endblock %}

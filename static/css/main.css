@@ -1,24 +1,250 @@
+@font-face {
+  font-family: 'cubano';
+  src: url("Cubano.ttf")
+}
+
 *, *::after, *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+
+*::selection:not(img) {
+  background: rgb(255, 255, 20);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-    background: white;
+  overflow-x: hidden;
 }
 
 nav {
-    height: 10vh;
-    background: lightcoral;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  background: white;
+  box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.39);
 }
 
-.banner {
-    height: 20vh;
-    background: yellowgreen;
+nav ul {
+  display: flex;
+  gap: 2rem;
+  padding: 1.5rem;
+  justify-content: start;
+  align-items: center;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav a {
+  font-size: 1.1rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: black;
+}
+
+#dropdown-menu {
+  display: flex;
+  gap: 2rem;
+}
+#dropdown {
+  display: none;
+  cursor: pointer;
+}
+
+#dropdown div{
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .b1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+.change .b2 {opacity: 0;}
+.change .b3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+#logo {
+  margin: 0 3rem;
+  font-family: 'cubano';
+  font-size: 1.5rem;
+  padding: .3rem 1rem;
+}
+
+#logo:hover {
+  text-decoration: none;
+  background:  rgb(255, 255, 20);
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.aboutme {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.aboutme img {
+  border-radius: 4px;
+}
+
+.spantext {
+  width: 60ch;
+  display: flex;
+  flex-direction: column;
+  gap: .2rem;
+}
+
+.spantext h1 {
+  font-family: 'cubano';
+  font-weight: 100;
+}
+
+
+.indent-text {
+  text-indent: 5ch;
+}
+
+.project {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding: 3rem;
+  justify-content: center;
+}
+
+.box {
+  width: 300px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+  font-size: 1.;
+}
+
+.box img {
+  width: 300px;
+  height: 250px;
+}
+
+.text a {
+  color: black;
+}
+
+.text a:hover {
+  text-decoration: none;
 }
 
 footer {
-   height: 10vh;
-   background: whitesmoke;
+  background: blue;
+  width: 100%;
+}
+
+footer ul {
+  display: flex;
+  gap: 3rem;
+  padding: 2rem;
+  justify-content: center;
+  background: #1d1e23;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* smaller screen */
+@media only screen and (max-width: 757px) {
+  .aboutme {
+    flex-direction: column;
+    align-items: center;
+  }
+  .project {
+    gap: 2rem;
+    padding: 2.5rem;
+  }
+  .aboutme h1 {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 655px) {
+  #logo {
+    margin: 0;
+  }
+  #dropdown-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    padding: 1rem 2rem;
+    width: 100%;
+    gap: 1.1rem;
+    box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.39);
+  }
+  #dropdown {
+    display: inline-block;
+  }
+  nav ul {
+    justify-content: space-between;
+  }
+  footer a{
+    font-size: .8rem;
+  }
+}
+
+@media only screen and (max-width: 613px) {
+  .spantext {
+    width: 40ch;
+  }
+  footer ul {
+    gap: 1rem;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .spantext h1 {
+    font-size: 1.7rem;
+  }
+  .spantext {
+    width: 35ch;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .spantext h1 {
+    font-size: 1.5rem;
+  }
+  .spantext {
+    width: 30ch;
+  }
+  .indent-text {
+    text-indent: 0;
+  }
 }

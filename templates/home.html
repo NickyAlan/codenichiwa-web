@@ -9,10 +9,57 @@
     {% block more_css %}{% endblock %}
 </head>
 <body>
-    <nav>This is nav bar</nav>
+<nav>
+    <ul>
+      <li><a id="logo" href="/">Aprilmix</a></li>
+      <div id="dropdown-menu">
+        <li><a href="/">home</a></li>
+        <li><a href="/#aboutme">about me</a></li>
+        <li><a href="/#project">project</a></li>
+        <li><a href="/#contact">contact</a></li>
+      </div>
+      <div id="dropdown" class="dropdown" onclick="toggleFunc(this)">
+        <div class="b1"></div>
+        <div class="b2"></div>
+        <div class="b3"></div>
+      </div>
+    </ul>
+  </nav>
     {% block container %}
-    <div class="banner">this is container</div>
+<div id="aboutme" class="aboutme">
+    <img src="static/images/521-300x300.jpg" alt="">
+    <div class="spantext">
+      <h1>Hi, I'm a developer 👋</h1>
+      <span class="indent-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quam minus officia, laboriosam magnam esse tempora repudiandae sit eos incidunt libero nemo enim nihil sed natus consectetur! Quo, sequi esse?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quam minus officia, laboriosam magnam esse tempora repudiandae sit eos incidunt libero nemo enim nihil sed natus consectetur! Quo, sequi esse?</span>
+
+      <br>
+      <span>
+        <span><strong>Languages:</strong> Python, JavaScript and CSS</span><br>
+        <span><strong>Tools:</strong> Flask, Pytorch, Tensorflow, Numpy, Pandas, Selenium and BS4</span>
+      </span>
+    </div>
+  </div>
+  <div id="project" class="project">
+    <div class="box">
+      <img src="static/images/521-300x300.jpg" alt="">
+      <div class="text">
+        <h3>Title</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, sunt laboriosam? Ipsa quidem vitae nesciunt. Esse natus placeat harum voluptatum.</p>
+        <a  href="">view</a>
+      </div>
+    </div>
+  </div>
     {% endblock %}
-    <footer>sometext-in footer</footer>
+  <footer id="contact">
+    <ul>
+      <li><a href="">github</a></li>
+      <li><a href="">gmail</a></li>
+      <li><a href="">linkedin</a></li>
+      <li><a href="">facebook</a></li>
+      <li><a href="">youtube</a></li>
+    </ul>
+  </footer>
+    <script src="{{url_for('static',filename='js/main.js')}}"></script>
 </body>
 </html>

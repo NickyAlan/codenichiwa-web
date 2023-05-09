@@ -1,5 +1,5 @@
-from flask import Flask, render_template, jsonify, request
-from __function__ import transcript_list, download_transcript
+from flask import Flask, render_template, jsonify, request, redirect
+from __function__ import transcript_list, download_transcript, Romanji2Hiragana, Romanji2Katakana, grammarChecker
 
 app = Flask(__name__)
 
@@ -22,6 +22,20 @@ def download_youtube_caption(video_id, code) :
     download_transcript(video_id, code)
     return jsonify({'status': 200})
 
+# langStuff
+@app.route('/langStuff', methods=['GET', 'POST'])
+def langstuffpage() :
+    return render_template('lang-convert.html')
+
+@app.route('/langStuff/api/<C>/<text>')
+def convertlangstuff(C, text) :
+    if C == 'R2H' :
+        results = Romanji2Hiragana(text)
+    elif C == 'R2K' :
+        results = Romanji2Katakana(text)
+    else :
+        results = grammarChecker(text)
+    return jsonify(results)
 
 
 if __name__ == '__main__' :
