@@ -47,7 +47,7 @@ const sendVideoId = async () => {
     if (video_id) {
         const response = await fetch(`/youtube/api/${video_id}`)
         const json = await response.json()
-        if (json.length != 0) {
+        if (json.length > 3) {
             let imageUrl = json[0].image
             let title = json[1].title
             let channelName = json[2].channel_name

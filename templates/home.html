@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}Codenichiwa{% endblock %}</title>
+    <link rel="icon" href="{{url_for('static',filename='images/icon.png')}}">
+    <title>{% block title %}aprilmix{% endblock %}</title>
     <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}"/>
     {% block more_css %}{% endblock %}
 </head>
@@ -16,7 +17,7 @@
         <li><a href="/">home</a></li>
         <li><a href="/#aboutme">about me</a></li>
         <li><a href="/#project">project</a></li>
-        <li><a href="/#contact">contact</a></li>
+        <li><a href="#contact">contact</a></li>
       </div>
       <div id="dropdown" class="dropdown" onclick="toggleFunc(this)">
         <div class="b1"></div>
@@ -25,13 +26,13 @@
       </div>
     </ul>
   </nav>
-    {% block container %}
+{% block container %}
 <div id="aboutme" class="aboutme">
-    <img src="static/images/521-300x300.jpg" alt="">
+    <img src="static/images/icon-image.png" alt="">
     <div class="spantext">
       <h1>Hi, I'm a developer 👋</h1>
-      <span class="indent-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quam minus officia, laboriosam magnam esse tempora repudiandae sit eos incidunt libero nemo enim nihil sed natus consectetur! Quo, sequi esse?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quam minus officia, laboriosam magnam esse tempora repudiandae sit eos incidunt libero nemo enim nihil sed natus consectetur! Quo, sequi esse?</span>
+      <span class="indent-text">Hi, I'm Nicky. I am currently learning programming in my spare time because I want to be able to solve problems and automate tedious tasks that I often encounter.</span>
+      <span class="indent-text">Programming is a fascinating field that allows you to build and create things from scratch. It's a very logical and straightforward process - the code executes exactly as you write it, and you can see the results of your actions in real-time. Whether your approach is correct or not, programming provides instant feedback, which is one of the reasons why I find it so rewarding. I believe that learning programming will help me think more critically and provide me with new opportunities to pursue in the future.</span>
 
       <br>
       <span>
@@ -40,24 +41,18 @@
       </span>
     </div>
   </div>
-  <div id="project" class="project">
-    <div class="box">
-      <img src="static/images/521-300x300.jpg" alt="">
-      <div class="text">
-        <h3>Title</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, sunt laboriosam? Ipsa quidem vitae nesciunt. Esse natus placeat harum voluptatum.</p>
-        <a  href="">view</a>
-      </div>
-    </div>
+  <div class="loading-project">
+    <img src="static/images/elon-loading.gif" alt="">
   </div>
-    {% endblock %}
+  <div id="project" class="project"></div>
+{% endblock %}
   <footer id="contact">
     <ul>
-      <li><a href="">github</a></li>
-      <li><a href="">gmail</a></li>
-      <li><a href="">linkedin</a></li>
-      <li><a href="">facebook</a></li>
-      <li><a href="">youtube</a></li>
+      <li><a target="_blank" href="https://github.com/NickygenN1">github</a></li>
+      <li><a target="_blank" href="https://www.kaggle.com/aprilmixdev">Kaggle</a></li>
+      <li><a target="_blank" href="mailto:aprilmix.dev@gmail.com">gmail</a></li>
+      <li><a target="_blank" href="https://web.facebook.com/alan.hunter.39108297">facebook</a></li>
+      <li><a target="_blank" href="https://www.youtube.com/@aprilmixdev">youtube</a></li>
     </ul>
   </footer>
     <script src="{{url_for('static',filename='js/main.js')}}"></script>

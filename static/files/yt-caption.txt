@@ -1,37 +1,251 @@
-บุหรี่เป็นอันตรายต่อสุขภาพ
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-ขอแค่เธอหายดี
- 
-บุหรี่เป็นอันตรายต่อสุขภาพ
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-บุหรี่เป็นอันตรายต่อสุขภาพ
+We've discovered more about the world
+than any other civilization before us.
+But we have been stuck
+on this one problem.
+How do proteins fold up?
+How do proteins go from a string
+of amino acids to a compact shape
+that acts as a machine and drives life?
+When you find out about
+proteins it is very exciting.
+You can think of them as
+little biological nanomachines.
+They are essentially the
+fundamental building blocks
+that power everything
+living on this planet.
+If we can reliably predict
+protein structures using AI,
+that could change the way
+we understand the natural world.
+Protein folding is one of these
+holy grail type problems in biology.
+We've always hypothesized
+that AI should be helpful
+to make these kinds of big scientific
+breakthroughs more quickly.
+And I'll probably be looking at little
+tunings that might make a difference.
+It should be creating a distagram one
+and a background distagram one.
+We've been working on our system AlphaFold
+really hard now for over two years.
+Rather than having to do
+painstaking experiments,
+in the future biologists might be able
+to instead rely on AI methods
+to directly predict structures
+quickly and efficiently.
+Generally speaking, biologists tend to be
+quite skeptical of computational work.
+And I think that skepticism
+is healthy and I respect it,
+but I feel very excited about
+what AlphaFold can achieve.
+CASP (Critical Assessment of Protein Structure Prediction) is when we say,
+look DeepMind is doing protein folding.
+This is how good we are.
+Maybe it's better than everyone else,
+maybe it isn't.
+We decided to enter the CASP competition
+because it represented
+the Olympics of protein folding.
+CASP, we started to try and speed up the
+solution to the protein folding problem.
+When we started CASP in 1994,
+I certainly was naive about
+how hard this was going to be.
+It was very cumbersome to do that
+because it took a long time.
+Let's see, what are we
+doing still to improve?
+Typically a hundred different groups from
+around the world participate in CASP.
+And we take a set of a hundred proteins,
+and we ask the groups to send us
+what they think the structures look like.
+We can reach 57.9 GDT
+on CASP12 ground truth.
+CASP has a metric on which you
+will be scored, which is this GDT metric.
+On a scale of zero to a hundred,
+you would expect a GDT
+over 90 to be a solution
+to the problem.
+If we do achieve this,
+this has incredible medical relevance.
+The implications are immense.
+From how diseases progress.
+How you can discover new drugs.
+It's endless.
+Well I wanted to make
+a really simple system,
+and the results have
+been surprisingly good.
+The team got some results
+with a new technique.
+Not only is it more accurate,
+but it's much faster than the old system.
+I think we'll substantially exceed
+what we're doing right now.
+Well, then it's a game changer, I think.
+In CASP13, something very significant
+had happened.
+For the first time we saw the effective
+application of artificial intelligence.
+We've advanced the state of the art
+in the field, so that's fantastic,
+but we still got a long way
+to go before we've solved it.
+The shapes were now approximately
+correct for many of the proteins
+but the details,
+exactly where each atom sits,
+which is really what one would
+call a solution were not yet there.
+It doesn't help if you have the tallest
+ladder when you're going to the moon.
+We hit a little bit of a brick wall,
+since we won CASP,
+then it was back to the drawing board
+and like what are our new ideas.
+And then it's taken them
+a little while, I would say
+for them to get to where they were
+but with the new ideas.
+And then now I think we're seeing
+the benefits of the new ideas.
+They can go further, right?
+So that's a really important moment.
+I've seen that moment so many times now.
+I know what that means now.
+And I know this is the time
+now to press.
+We need to double down and go
+as fast as possible from here.
+I think we've got no time to lose.
+So the intention is to enter CASP again.
+CASP is deeply stressful.
+There's something weird
+going on with the learning,
+because It is learning something
+that's correlated with GDT,
+but it's not calibrated.
+I feel slightly uncomfortable.
+We should be learning this
+you know in the blink of an eye.
+The technology advancing outside
+DeepMind is also doing incredible work.
+There's always the possibility
+another team has come
+somewhere out of left field
+that we don't even know about.
+Someone asked me,
+"Well, should we panic now?"
+Of course, we should
+have been panicking before.
+It does seem to do better,
+but still doesn't do
+quite as well as the best model.
+So it looks like there's room
+for improvement.
+There's always a risk
+that you've missed something,
+and that's why blind assessments
+like CASP are so important
+to validate whether our results are real.
+Obviously, I'm excited
+to see how CASP14 goes.
+My expectation is we get
+our heads down, we focus on
+the full goal which is to solve
+the whole problem.
+The Prime Minister has announced
+the most drastic limits
+to our lives that the UK has
+ever seen in living memory.
+I must give the British people
+a very simple instruction,
+you must stay at home.
+We were prepared for CASP
+to start on April 15th,
+because that's when it was
+originally scheduled to start.
+And it's been delayed
+by a month due to coronavirus.
+I really miss everyone.
+And I struggled a little bit just
+kind of getting into a routine
+especially with my wife,
+she came down with the virus.
+I mean, luckily it didn't turn
+out to be serious.
+CASP started on Monday.
+Can I just check this diagram
+you've got here, John.
+This one where we ask ground truth.
+Is this one we've done badly on?
+We're actually quite good on this region.
+If you imagine that
+we hadn't had said it came
+around this way,
+but had put it in the right spot.
+Yeah, there instead, yeah.
+One of the hardest proteins
+we've gotten in CASP thus far
+is a SARS-CoV-2 protein called ORF8.
+ORF8 is a coronavirus protein.
+We tried really hard
+to improve our prediction.
+Like really, really hard.
+Probably the most time
+we have ever spent on a single target.
+So we're about two-thirds
+of the way through CASP,
+and we've gotten three answers back.
+We now have a ground truth for ORF8,
+which is one of the coronavirus proteins.
+And it turns out we did
+really well in predicting that.
+It's an amazing job everyone,
+the whole team.
+It's been an incredible effort.
+Here what we saw in CASP14 was a group
+delivering atomic accuracy off the bat.
+Essentially solving what
+in our world is two problems.
+How do you look to find
+the right solution,
+and then how do you recognize you've got
+the right solution when you're there.
+All right. Are we mostly here?
+I'm going to read an email.
+I got this from John Moult.
+And I'll just read it. It says,
+"John, as I expect you know,
+your group has performed
+amazingly well in CASP14.
+Both relative to other groups
+and in absolute model accuracy.
+Congratulations on this work.
+It is really outstanding."
+AlphaFold represents a huge leap
+forward that I hope will
+really accelerate drug discovery
+and help us to better understand disease.
+It's pretty mind blowing.
+You know these results were for me,
+having worked on this problem
+so long after many, many stops and starts
+and will this ever get there,
+suddenly this is a solution.
+We've solved the problem.
+This gives you such excitement
+about the way science works.
+About how you can never see exactly
+or even approximately,
+what's going to happen next.
+There are always these surprises.
+And that really as a scientist
+is what keeps you going.
+What's going to be the next surprise?
