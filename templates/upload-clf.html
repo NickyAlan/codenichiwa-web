@@ -1,0 +1,19 @@
+{% extends "home.html" %} 
+{% block title %}What is this animal?{% endblock %}
+{% block more_css %}
+<link rel="stylesheet" href="{{url_for('static',filename='css/upload-clf.css')}}"/>
+{% endblock %}
+
+{% block container %}
+<div class="container-classifier">
+    <h1 class="title-text">What is this animal?  🤔</h1>
+    <span class="desc-text">Guess what animal is in the image. The model was trained with a scope of 90 animals: <a href="https://www.kaggle.com/datasets/iamsouravbanerjee/animal-image-dataset-90-different-animals" target="_blank">dataset</a> <br>which is why there are some animals that the model doesn't recognize.</span>
+    {% if alert %}
+    <p class="alert">{{alert}}</p>
+    {% endif %}
+    <form method="post" enctype="multipart/form-data">
+      <input type="file" accept="image/*" name="imageFile">
+      <button type="submit">upload</button>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends "home.html" %} 
+{% block title %}What is this animal?{% endblock %}
+{% block more_css %}
+<link rel="stylesheet" href="{{url_for('static',filename='css/predict-clf.css')}}"/>
+{% endblock %}
+
+{% block container %}
+  <div class="container-predict">
+    <h1>🤔 {{predicts[0]}}</h1>
+    <div class="main-predict">
+      <div class="input-image">
+        <img src="{{image_url}}">
+      </div>
+      <div class="predict-canvas">
+        <ul>
+        {% for predict in predicts %}
+            <li>{{predict}}</li>
+        {% endfor %}
+        </ul>
+        <span><a href="/what-is-this-animal">new image</a></span>
+      </div>
+    </div>
+  </div>
+{% endblock %}

@@ -3,19 +3,16 @@
   src: url("Cubano.ttf");
 }
 
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 :root {
   --input: #f7f6f7;
   --btn1: #f7d5d5;
   --btn2: #ee3131;
   --btn3: #374347;
+}
+
+.main-yt {
+  width: 100%;
+  min-height: 80vh;
 }
 
 #caption-h1 {

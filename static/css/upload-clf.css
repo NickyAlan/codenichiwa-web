@@ -1,0 +1,120 @@
+.container-classifier {
+  width: 100%;
+  height: 80vh;
+  padding: 2rem 1rem;
+  font-family: Roboto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title-text {
+  font-size: 3rem;
+  margin-bottom: .3rem;
+}
+
+.desc-text {
+  text-align: center;
+  max-width: 80ch;
+  margin-bottom: 1rem;
+}
+
+.container-classifier form {
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  flex-direction: column;
+}
+
+.alert {
+  color: red;
+  background: #000000;
+  padding: .3rem;
+}
+.container-classifier button {
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: .4rem 2rem;
+  border-radius: 3px;
+  border: none;
+  background: #482eed;
+  transition: all .3s ease-in-out;
+  color: white;
+}
+
+.container-classifier button:hover {
+  background: #000;
+}
+
+input[type="file"] {
+  position: relative;
+}
+
+input[type="file"]::file-selector-button {
+  width: 136px;
+  color: transparent;
+}
+
+/* Faked label styles and icon */
+input[type="file"]::before {
+  position: absolute;
+  pointer-events: none;
+  top: 10px;
+  left: 16px;
+  height: 20px;
+  width: 20px;
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230964B0'%3E%3Cpath d='M18 15v3H6v-3H4v3c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-3h-2zM7 9l1.41 1.41L11 7.83V16h2V7.83l2.59 2.58L17 9l-5-5-5 5z'/%3E%3C/svg%3E");
+}
+
+input[type="file"]::after {
+  position: absolute;
+  pointer-events: none;
+  top: 11px;
+  left: 40px;
+  color: #0964b0;
+  content: "Choose File";
+}
+
+
+/* file upload button */
+input[type="file"]::file-selector-button {
+  border-radius: 4px;
+  padding: 0 16px;
+  height: 40px;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.05);
+  margin-right: 16px;
+  transition: background-color 200ms;
+}
+
+/* file upload button hover state */
+input[type="file"]::file-selector-button:hover {
+  background-color: #f3f4f6;
+}
+
+/* file upload button active state */
+input[type="file"]::file-selector-button:active {
+  background-color: #e5e7eb;
+}
+
+@media only screen and (max-width: 550px) {
+  .title-text {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .title-text {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 372px) {
+  .title-text {
+    font-size: 1.6rem;
+  }
+}

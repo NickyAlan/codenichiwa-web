@@ -5,7 +5,8 @@
 {% endblock %}
 
 {% block container %}
-<h1 id="caption-h1">Youtube Caption Loader</h1>
+<div class="main-yt">
+    <h1 id="caption-h1">Youtube Caption Loader</h1>
     <div class="input-url-caption" id="input-url-caption">
         <input type="text" id="urlInput" placeholder="paste youtube url">
         <div class="btn-input">
@@ -39,5 +40,6 @@
         </div>
         </div>
     </div>
+</div>
     <script src="{{url_for('static',filename='js/youtube-caption.js')}}"></script>
 {% endblock %}

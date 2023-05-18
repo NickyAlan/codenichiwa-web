@@ -1,251 +1,530 @@
-We've discovered more about the world
-than any other civilization before us.
-But we have been stuck
-on this one problem.
-How do proteins fold up?
-How do proteins go from a string
-of amino acids to a compact shape
-that acts as a machine and drives life?
-When you find out about
-proteins it is very exciting.
-You can think of them as
-little biological nanomachines.
-They are essentially the
-fundamental building blocks
-that power everything
-living on this planet.
-If we can reliably predict
-protein structures using AI,
-that could change the way
-we understand the natural world.
-Protein folding is one of these
-holy grail type problems in biology.
-We've always hypothesized
-that AI should be helpful
-to make these kinds of big scientific
-breakthroughs more quickly.
-And I'll probably be looking at little
-tunings that might make a difference.
-It should be creating a distagram one
-and a background distagram one.
-We've been working on our system AlphaFold
-really hard now for over two years.
-Rather than having to do
-painstaking experiments,
-in the future biologists might be able
-to instead rely on AI methods
-to directly predict structures
-quickly and efficiently.
-Generally speaking, biologists tend to be
-quite skeptical of computational work.
-And I think that skepticism
-is healthy and I respect it,
-but I feel very excited about
-what AlphaFold can achieve.
-CASP (Critical Assessment of Protein Structure Prediction) is when we say,
-look DeepMind is doing protein folding.
-This is how good we are.
-Maybe it's better than everyone else,
-maybe it isn't.
-We decided to enter the CASP competition
-because it represented
-the Olympics of protein folding.
-CASP, we started to try and speed up the
-solution to the protein folding problem.
-When we started CASP in 1994,
-I certainly was naive about
-how hard this was going to be.
-It was very cumbersome to do that
-because it took a long time.
-Let's see, what are we
-doing still to improve?
-Typically a hundred different groups from
-around the world participate in CASP.
-And we take a set of a hundred proteins,
-and we ask the groups to send us
-what they think the structures look like.
-We can reach 57.9 GDT
-on CASP12 ground truth.
-CASP has a metric on which you
-will be scored, which is this GDT metric.
-On a scale of zero to a hundred,
-you would expect a GDT
-over 90 to be a solution
-to the problem.
-If we do achieve this,
-this has incredible medical relevance.
-The implications are immense.
-From how diseases progress.
-How you can discover new drugs.
-It's endless.
-Well I wanted to make
-a really simple system,
-and the results have
-been surprisingly good.
-The team got some results
-with a new technique.
-Not only is it more accurate,
-but it's much faster than the old system.
-I think we'll substantially exceed
-what we're doing right now.
-Well, then it's a game changer, I think.
-In CASP13, something very significant
-had happened.
-For the first time we saw the effective
-application of artificial intelligence.
-We've advanced the state of the art
-in the field, so that's fantastic,
-but we still got a long way
-to go before we've solved it.
-The shapes were now approximately
-correct for many of the proteins
-but the details,
-exactly where each atom sits,
-which is really what one would
-call a solution were not yet there.
-It doesn't help if you have the tallest
-ladder when you're going to the moon.
-We hit a little bit of a brick wall,
-since we won CASP,
-then it was back to the drawing board
-and like what are our new ideas.
-And then it's taken them
-a little while, I would say
-for them to get to where they were
-but with the new ideas.
-And then now I think we're seeing
-the benefits of the new ideas.
-They can go further, right?
-So that's a really important moment.
-I've seen that moment so many times now.
-I know what that means now.
-And I know this is the time
-now to press.
-We need to double down and go
-as fast as possible from here.
-I think we've got no time to lose.
-So the intention is to enter CASP again.
-CASP is deeply stressful.
-There's something weird
-going on with the learning,
-because It is learning something
-that's correlated with GDT,
-but it's not calibrated.
-I feel slightly uncomfortable.
-We should be learning this
-you know in the blink of an eye.
-The technology advancing outside
-DeepMind is also doing incredible work.
-There's always the possibility
-another team has come
-somewhere out of left field
-that we don't even know about.
-Someone asked me,
-"Well, should we panic now?"
-Of course, we should
-have been panicking before.
-It does seem to do better,
-but still doesn't do
-quite as well as the best model.
-So it looks like there's room
-for improvement.
-There's always a risk
-that you've missed something,
-and that's why blind assessments
-like CASP are so important
-to validate whether our results are real.
-Obviously, I'm excited
-to see how CASP14 goes.
-My expectation is we get
-our heads down, we focus on
-the full goal which is to solve
-the whole problem.
-The Prime Minister has announced
-the most drastic limits
-to our lives that the UK has
-ever seen in living memory.
-I must give the British people
-a very simple instruction,
-you must stay at home.
-We were prepared for CASP
-to start on April 15th,
-because that's when it was
-originally scheduled to start.
-And it's been delayed
-by a month due to coronavirus.
-I really miss everyone.
-And I struggled a little bit just
-kind of getting into a routine
-especially with my wife,
-she came down with the virus.
-I mean, luckily it didn't turn
-out to be serious.
-CASP started on Monday.
-Can I just check this diagram
-you've got here, John.
-This one where we ask ground truth.
-Is this one we've done badly on?
-We're actually quite good on this region.
-If you imagine that
-we hadn't had said it came
-around this way,
-but had put it in the right spot.
-Yeah, there instead, yeah.
-One of the hardest proteins
-we've gotten in CASP thus far
-is a SARS-CoV-2 protein called ORF8.
-ORF8 is a coronavirus protein.
-We tried really hard
-to improve our prediction.
-Like really, really hard.
-Probably the most time
-we have ever spent on a single target.
-So we're about two-thirds
-of the way through CASP,
-and we've gotten three answers back.
-We now have a ground truth for ORF8,
-which is one of the coronavirus proteins.
-And it turns out we did
-really well in predicting that.
-It's an amazing job everyone,
-the whole team.
-It's been an incredible effort.
-Here what we saw in CASP14 was a group
-delivering atomic accuracy off the bat.
-Essentially solving what
-in our world is two problems.
-How do you look to find
-the right solution,
-and then how do you recognize you've got
-the right solution when you're there.
-All right. Are we mostly here?
-I'm going to read an email.
-I got this from John Moult.
-And I'll just read it. It says,
-"John, as I expect you know,
-your group has performed
-amazingly well in CASP14.
-Both relative to other groups
-and in absolute model accuracy.
-Congratulations on this work.
-It is really outstanding."
-AlphaFold represents a huge leap
-forward that I hope will
-really accelerate drug discovery
-and help us to better understand disease.
-It's pretty mind blowing.
-You know these results were for me,
-having worked on this problem
-so long after many, many stops and starts
-and will this ever get there,
-suddenly this is a solution.
-We've solved the problem.
-This gives you such excitement
-about the way science works.
-About how you can never see exactly
-or even approximately,
-what's going to happen next.
-There are always these surprises.
-And that really as a scientist
-is what keeps you going.
-What's going to be the next surprise?
+- 저희는 항공권 한 장이
+50만 달러인 제트기를 타볼 겁니다
+그리고 항공권이 2만 5천 달러인
+전용기로 타볼 거고요
+1만 달러짜리 퍼스트 클래스도 타볼 거고
+비행선 등 많은 것이 준비되어 있어요
+지구상 가장 호화로운 비행기에 올라
+비행하는 것이 어떤지
+여러분께 보여드리기 전에
+전 세계에서 가장 저렴한
+비행기부터 타볼 겁니다
+곧 부서질 것 같아요
+"비행사"
+여기 1달러예요
+아주 긴장되네요
+- 긴장하실 것 없어요
+12를 둘로 나눈
+횟수만큼 조종해 봤거든요
+- 여섯 번 조종해
+보셨단 말씀이잖아요?
+왜 잔디깎기 소리가 나죠?
+전 세계에서 가장 저렴한
+비행기를 타고 날 시간입니다
+아이고
+으악...
+아이고, 안 돼
+너무 빨리 달리는 것 같아요
+- 날아라, 날아
+- 위험한 소리가 나요
+- 아녜요
+카메라에 부딪힐 뻔 했어
+- 와
+- 어떻게 된 거야?
+- 안전벨트 매고 계세요
+- 제 안전벨트는 걱정 마시고
+제 목숨만 살려주세요, 더그 씨
+- 노력 중이에요
+- 날긴 날았네요
+- 이제 미스터 비스트 채널은 제 겁니다
+- 이제 충분히 탄 것 같으니
+언제든 내려주셔도 돼요
+- 안 내려 줄 건데요?
+- 더그 님, 제발요
+- 제 월급 주는 분이니까
+살살 다뤄 주세요
+- 이것도 엄청나긴 하지만
+전 세계에서
+가장 비싼 비행기를 타는 것까지
+꼭 지켜봐 주세요
+- 그렇게 말씀하시니
+조금 슬퍼지네요
+- 으악, 내려온다
+- [더그] 착륙할 준비하세요
+- 다 왔다
+- [모두] 와아
+- 착륙했다, 살아남았어
+- [내레이터] 다음으로는
+1천 달러짜리
+퍼스트 클래스에 타볼 겁니다
+- 한 마디 할게
+여기 퍼스트 클래스 좌석을
+제가 다 샀거든
+앉고 싶은 곳에 앉아
+- 고오급 미스트 로션 뿌릴래?
+- 왜?
+- 퍼스트 클래스니까
+파인 다이닝 식사를 주실 거 아냐
+- [내레이터] 모두 개별 좌석이 있고
+TV도 따로 있습니다
+비행기 표에는
+근사한 식사와
+무료 위생 용품, 그리고 잠옷까지
+포함되어 있어요
+- 이거 다 집에 가져가도 되는 거야?
+- [내레이터] 긴 비행 시간 동안...
+- 리클라이너 기능도 있네
+침대에도 이런 기능이 있어야 돼
+- 무슨 관짝에 들어간 느낌인데
+마음에 들어
+- 진짜 좋다
+- [내레이터] 가장 좋은 점은...
+- 이 1천 달러짜리 비행기에서
+제일 좋은 점이 뭐냐면
+놀란을 차단할 수 있다는 거야
+- 이 유리 너무 별로야
+나만 따로 떨어지잖아
+여기 혼자 남는다고
+- 그래서 나는 오히려 좋던데?
+- [내레이터] 유일한 단점은
+사생활이 그다지 보장되진 않는다는 거예요
+- [크리스] 사람들이 지나다니는 와중에
+영상을 찍으니 너무 창피하다
+- [내레이터] 그러면 이보다
+10배 비싼 항공권은
+어떤 느낌인지 한번 보시죠
+- 이제 1만 달러 짜리 항공권입니다
+와, 이거 너무 좋다
+다리를 쭉 뻗고도 공간이 남아
+이거 봐
+어떤 것이 포함되어 있는지
+하나하나 따져 볼게요
+태블릿, 커다란 터치스크린 TV
+좌석에 달려 있는 간이 바, 간식
+제 피스터블 초콜릿이 아니네요
+환불받고 싶어요
+- 와이파이 연결도 되네요
+좌석값이 1만 달러인데
+와이파이를 쓰려면 20달러를 내야 해요
+- 무료가 아니야?
+- 이제 이륙하고 있어요
+엄청난 게 뭐냐면
+이륙하는 장면을 TV에서 볼 수 있어요
+16시간짜리 비행이다 보니
+화장실에 가서 또...
+욕실이 정말 근사하지 않나요?
+세면대도 있고, 변기도 있고
+샤워 부스도 있어요
+정말 엄청나요
+저것 좀 보세요
+지금 3만 피트 상공에 올라 있는데
+샤워를 할 수 있다니요!
+- [내레이터] 이뿐만 아니라
+저랑 제 친구들은
+몇 번이고 고메 식사 주문이 가능해요
+이게 다가 아닙니다
+가장 멋진 것이 기다리고 있어요
+- 안녕하세요
+- [내레이터] 비행기 뒤편에는
+개인용 라운지가 있습니다
+- 지미
+- 왜?
+- 아야
+- 이건 꿈이 아니야
+- 여기까지 1만 달러짜리
+항공권이었습니다
+카메라를 위아래로
+흔들어 주세요
+이제는 2만 5천달러짜리
+비행기 안에 들어와 있습니다
+위층이 저희 좌석이에요
+맞아요, 복층이에요
+- 미쳤다
+- 엄청나다
+- 저희는 다른 사람들이
+앉아있는 곳 위에 앉게 될 거예요
+- 대박
+- 여기가 미스터 비스트
+님 자리예요
+- [내레이터] 2만 5천 달러짜리 항공권으로는
+두 개의 널찍한 공간이 생겼습니다
+- 와, 대단하다
+이런 건 처음 봐
+- 대박...
+- [내레이터] 이번 비행기의 저희 좌석은
+아까 탔던 비행기 좌석의
+4배가 더 넓었습니다
+- 팔벌려뛰기를 해도 충분할 만큼의
+공간이 있는 비행기는 처음 봐요
+이거 보세요
+- [내레이터] 의자 두 개와
+여러 대의 Tv도 있었어요
+- 여태까지 탔던 비행기 중 어디에도
+TV가 이렇게 많았던 적은 없었어요
+- [내레이터] 담당 승무원께서
+식사를 직접 가져다 주십니다
+- 왜 비싼 비행기에는
+항상 캐비어가 나올까요?
+- [내레이터] 욕실도 있죠
+- 한 말씀 드려도 될까요?
+욕실이 좀 실망스러워요
+샤워 부스도 없고, 바닥에 난방도
+안 들어오는데 크기도 절반이에요
+1만 달러 항공권이
+더 가성비가 좋은 것 같아요
+- 항공권 한 장에
+이만한 돈을 쓸만한 것 같은가요?
+- 아뇨
+저라면 차라리 차를 타겠어요
+- 차를 사세요
+- 이 객실에서 제일 좋은 것은
+바로 퀸사이즈 침대입니다
+와아
+- 그냥 비행기 좌석을 다 침대로
+만들면 좋을 것 같은데
+- 세 개의 좌석을 붙이는 대신에
+침대 세 개가 달린
+벙크 베드를 놓는 거예요
+- 좋은 아침이에요
+정말 푹 잤어요
+- 칼, 일어나
+이제 착륙할 거야
+- 정말 꼼짝도 않고 잤어요
+전 세계에서 가장 비싼 여객기였습니다
+이제는 전용 비행기를 타볼 시간입니다
+이건 10만 달러짜리 비행기입니다
+- 진짜 커요
+- 이정도 금액을 지불하면
+비행기를 전세낼 수 있어요
+- 전용기, 전용기
+- 꼭 호화 요트같네
+- 진짜 엄청나다
+- 믿겨지지가 않는데
+- 진짜 엄청난 게 뭔지 알아?
+이건 네 개의 객실 중에
+한 객실일 뿐이라는 거야
+- [크리스] 비행기에
+객실이 더 있다고?
+난 이게 그 방인 줄 알았어
+- 이리 와봐
+- 이건 무슨 방이야?
+- [내레이터] 여기는
+또 하나의 라운지 공간이고
+여러 가지 간식과
+커다란 TV가 있습니다
+좀 피곤할 때를 위해
+개인 침실도 있어요
+- 와, 대박이다
+- 꼭 호텔 같네
+- [내레이터] 마지막이지만
+가장 중요한...
+욕실입니다
+- 세 개째네
+입이 쩍 벌어진다, 대박
+- 대박
+- 진짜 미쳤다
+욕실에 좌석도 있어
+찜
+- 이 비행기 크기의 절반이라도 되는
+비행기 본 적 있어?
+- 아니
+- 한 번도
+- 전용기 위에서는
+무슨 얘기를 해야 적절할까?
+- 아니 글쎄
+작년에 내가 이것저것 판매를 했잖아
+- 잠깐, 잠깐
+이륙하는 방향이랑 반대로
+앉아있다는 걸 이제 알았네
+- 으악
+- 안돼, 고프로 카메라
+- 이륙하고 있는지도 몰랐어
+- 카메라는 안 돼, 멈춰
+- 진짜 미쳤다
+- 날고 있어
+- 아이고
+- 그냥 굴러다닐 수도 있어
+- 앗, 난기류다
+안 되겠다, 앉아야겠어
+- 이 욕실이 최고인 것 같다
+이게 변기예요
+변기 위에 앉아서 TV를 볼 수 있습니다
+- 놀란, 욕실에서 편안한 시간 보내렴
+- 뭐 하려는 건지
+잘 모르겠어
+에이, 안 돼
+- 절대 못 나올 거예요
+- 와, 뭐야?
+- 대박이다
+- 스테이크와 매시드 포테이토
+야채 준비해 드리겠습니다
+저한테 의견을 주셔서
+피자를 가져와 봤어요
+- [모두] 와아
+- 이 비행기가 제일 좋은 이유는
+유튜브가 되기 때문이에요
+근데 저희 채널이 제일 먼저
+안 떠서 최고는 아니게 됐어요
+- 부자들이
+눕는 침대라는 게 딱 보이네
+베개가 500개는 되는 것 같아
+이건 여기다 놓고
+저건 저기다 놓고
+- 이 비행기를
+조종해 볼게요
+- 전용기의 장점이 바로 이겁니다
+하고 싶은 걸 언제든지
+다 해볼 수 있어요
+칼은 비행기를 조종하고
+챈들러는 피자랑 춤 추고 있고요
+크리스는 낮잠 자고요
+놀란은 어딨는지 모르겠네요
+전용기를 타면 레이오버도 없고
+수하물 검사도 하지 않으니
+시간을 아낄 수 있어요
+그러니까
+부자라면 누구나 전용기를 소유하는 거예요
+- 손님?
+- 네?
+- 곧 착륙할 겁니다
+- 칼, 나 좀 꺼내줘
+우리 곧 착륙한대
+얼른 꺼내줘
+- 으악
+- 맙소사
+정말 엄청나게 불편했어
+- 잠깐만, 놀란 아직도 욕실에 있어?
+- 몰라, 그래?
+- 칼, 얼른 꺼내줘
+- 아이고
+- 비행 어땠어?
+- 그래도 1천 달러짜리
+비행기보다 좋았어
+- 이제 30만 달러짜리 비행선입니다
+모자이크는 잠시 뒤 치워드릴게요
+눈가리개를 벗기기 전에
+비행선 옆에 뭐가 적혀있을 것 같아?
+- 놀란 전화번호 아냐?
+- 놀란 전화번호 적었어?
+- 그거 재밌겠네
+- 다음에 그렇게 하자
+- 눈가리개를 벗고 뒤를 돌아봐
+- "나는 칼의 엄마를 하트해", 대박
+- 도대체 왜?
+우리 엄마 진짜 좋아해
+- 아니, '나는 칼의 엄마를 하트한다'지
+사랑하는 게 아니잖아
+그럼 이상할 걸
+- 아냐, 사랑해
+- 아하
+- [칼] 이거 밀어봐도 돼?
+- 오, 움직이는 것 같아
+- 줄만으로도 이 커다란 비행선을
+잡아당길 수 있어요
+어디서 돈이 나서 이렇게
+큰 비행선을 빌리고
+10만 달러를 내서
+글씨를 적었는지 궁금하시죠?
+바로 "ZipRecruiter"입니다
+제가 편집자, 카메라맨, 회계사를
+구할 때 사용하는 채용 플랫폼입니다
+제가 올라타면
+가라앉는지 한번 보겠습니다
+- 완전 가라앉는데?
+- 나보고 살쪘다는 거야?
+- 운동을 많이한다는 거지
+- 뚱뚱하단 거겠지
+ZipRecruiter는
+사람들이 멋진 일을
+구할 때 찾는 곳입니다
+비행선이 충돌하면
+나는 죽을 거야
+- 그렇지
+- Zipcruiter로 다른 직업을 찾으면 돼
+- 그거 참 걱정이 덜어진다
+고마워
+- 이 대화 좀 걱정되는데...
+- 쉿...
+그럼 가 볼까요?
+잘 있어, 챈들러
+- 잘 가, 영영 안녕
+- 뭐지?
+- 방금 "영영"이라고 한 것 같은데
+- [크리스] 다른 광고를 해도 됐을 텐데
+사랑 고백을 택했어
+- 정말 무섭다
+속도가 전혀 안 나는데?
+- 경주장에서 만나요
+- [내레이터] 말씀드리는 걸
+깜빡했는데
+저희는 비행선을 타고 15만 명이 모인
+전 세계 최대 자동차 경기장으로 가고 있습니다
+칼은 아무것도 모르고 있어요
+- 비행선 안에서 죽기 전에
+여러분께 ZipRecruiter에 대해
+말씀드릴 게 있어요
+최근에 저희가 ZipRecruiter에
+채용 공고를 올렸는데요
+후보자 한 분에게
+전화를 걸어 면접을 보겠습니다
+안녕하세요, 토마스 씨
+ZipRecruiter에
+제출하신 이력서 잘 봤어요
+제 목소리 들리세요?
+- [토마스] 네, 미스터 비스트 님이세요?
+- 네, 제가 미스터 비스트고요
+중요한 건 이게 아니에요
+- [토마스] 죄송한데 말씀이
+거의 안 들리네요
+- 네, 비행선에서
+전화드리는 거거든요
+편집자로 일하신 지가
+얼마나 되셨나요?
+- [토마스] 거의 10년 정도 된 것 같아요
+- 저희 영상을 더 멋지게
+만들어주실 수 있나요?
+- [토마스] 강력한 팀과
+창의적인 기술만 약간 더하면
+영상을 더 근사하게
+만들어드릴 수 있을 것 같아요
+- 좋습니다
+작업하신 것 몇 가지만 보내주세요
+토마스 씨처럼 저희와 함께
+일할 기회를 잡고 싶으시면
+아래 설명란의 링크를 클릭하시거나
+ziprecruiter.com/mrbeast로 방문해 주세요
+지원하신 모든 분을 꼼꼼히 살펴볼 겁니다
+저희는 이제
+데이토나 500 위를 날고 있는데요
+많은 관중이 모이는 행사 중 하나죠
+- [칼] 더 좋은 내용을
+적을 수도 있었잖아
+- 아냐, 이게 딱이야
+- 정말 잘못 됐어
+- [크리스] 우리 보이나?
+- [미스터 비스트] 저기 보이네요
+- 칼, 진짜 모든 사람들이
+너희 어머니를 좋아하는 것 같다
+- 나도 칼네 어머님 사랑해
+- 모든 사람들이 "우리는 모두..."
+- 나는 칼의 어머니를 사랑해
+- 칼 어머님, 혹시 보고 계신다면
+많은 사랑을 받고 계신다는 점 알아주세요
+- [관중] 우리는 칼의 어머니를 사랑해
+- [칼] 너 싸이코같아
+- [미스터 비스트] 너희 어머니를
+그만큼 사랑하지
+- [내레이터] 이제는 지구상에서
+가장 비싼 전용기에 오릅니다
+- 환영합니다
+신발을 좀 벗어주시겠어요?
+카펫이 2백만 달러짜리거든요
+- 신발을 "꼭 좀" 벗어달라고 하셨어요
+- [미스터 비스트] 이 전용기가
+평방 피트로 보면 저희 집보다 더 커요
+- [내레이터] 이 전용기가
+실제로 얼마나 큰지
+짐작조차 어려울 정도예요
+- 여기는 침실이고
+- 와
+- 여기도 침실
+침실이 또 있고, 또 있고, 끝이 없어
+여기는 승무원분들을 위한 공간이고
+침실이 또 있어
+- 대박
+- 뭐 있는데?
+- 찜이야
+- [내레이터] 이 비행기의 침실이
+훨씬 더 호화스럽습니다
+도금한 세면대도 있고
+샤워 부스가 여러 대 있고요
+- 안에 뭐 있어?
+- 저게 변기야
+- [내레이터] 이 비행기에는
+전용 상영관도 있습니다
+12명까지 앉을 수 있는
+라운지 공간도 있습니다
+- [미스터 비스트] 그리고
+이쪽으로 오시면 거실이 있어요
+- 우리 집에 있는 것보다
+소파가 더 커
+- 한 가지 덧붙이자면
+여기까지가 이 비행기의
+1/3라는 거야
+- 더 있어?
+- [크리스] 와, 진짜 좋은 거 많다
+- 침실에서 승무원 호출도 돼요
+- 비행할 때마다
+이런 전용기 탈 수 있으면
+그냥 비행기 안에서 살래
+대박, 뭐야?
+- 미안, 조명을 껐다
+켰다 해보고 있었어
+- 아까 여긴 왜 못 봤지?
+비행기 전체를 다 걸어봤던 것 같은데
+- 이게 끝이라고
+생각했으면 오산이야
+이 비행기에는
+마사지룸도 있다고
+어때, 칼?
+- 정말 좋아
+"2백만 달러 짜리 예술품"
+- 그러니까 만지면 안 되겠지...
+- 여러분, 저희가 이 전용기를
+어떻게 빌릴 수 있었죠?
+- 우리 팬 분들 덕분이죠
+- [내레이터] 그래서 저희는
+무작위로 구독자 분을 추첨해
+이 50만 달러짜리
+비행에 초대했습니다
+- 전용기에 타본 적 있으세요?
+- 아뇨, 처음이에요
+- 근데 지구상에서
+가장 비싼 전용기에 타게 되셨습니다
+- 비행기에 이런 게 있는 건 처음 봐요
+진짜 엄청나네요
+- 선생님, 이건 뭔가요?
+- 슈퍼에서
+살 수 있는 초콜릿이죠
+- 좀 버려 주실래요?
+정말 버려주실 줄은 몰랐어요
+앞으로는
+이 초콜릿만 비치해 주세요
+- 알겠습니다
+- 피스터블이라고 하는데요
+지구상에서 제일 평점이 높은
+초콜릿이에요
+- [칼] 여긴 뭐가 있지?
+- [크리스] 분명히
+비밀의 방이 있을 거야
+승무원분들이 계신 곳이네
+다들 너무 깜짝 놀라셨어
+- 승객여러분, 이제 이륙합니다
+좌석벨트 단단히 매시고
+그만 신내시기 바라요
+고맙습니다
+보통 이런 전용기에는
+어떤 분들이 타시나요?
+- 사업 운영하시는 분들이죠
+그런 분들과 비교해서
+제 친구들은 어떤가요?
+- 조금 바보 같으신 것 같아요
+- [내레이터] 이 정도 금액을 지불하면
+언제든지 최고급 음식이 서빙됩니다
+비행기 어디에서든 맛볼 수 있죠
+전용 마스터 스위트룸에서도요
+- 한 입 드실래요?
+- 지금 어디로 가고 있는지 아세요?
+- 아뇨
+- 여러분을 디즈니 월드로
+모시고 있습니다
+그리고 하고 싶은 것을 마음껏 하시도록
+모든 비용 이틀 치를
+저희가 다 대드립니다
+- 말도 안 돼
+- 전 세계에서
+제일 비싼 전용기에 올라
+디즈니 월드에서 이틀을
+공짜로 보내고 싶으시다면, 구독하세요
+"칼의 어머니를 위해 구독해 주세요"
+"칼의 어머니를 위해 구독해 주세요"

@@ -11,10 +11,6 @@
   font-family: Roboto;
 }
 
-*::selection:not(img) {
-  background: rgb(255, 255, 20);
-}
-
 html {
   scroll-behavior: smooth;
 }

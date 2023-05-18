@@ -1,7 +1,16 @@
-import requests, json
+import requests, json, os
 from string import ascii_lowercase
 from youtube_transcript_api import YouTubeTranscriptApi
 from gingerit.gingerit import GingerIt
+
+import torch
+import numpy as np
+import torchvision
+from torch import nn
+from PIL import Image
+from torchvision import transforms as t
+from torchvision.models import efficientnet_b0
+from __datas__ import classNames
 
 # youtube caption loader
 def transcript_list(video_id) :
@@ -147,3 +156,68 @@ def grammarChecker(text: str) :
     parser = GingerIt()
     corrected_text = parser.parse(text)
     return {'results': [corrected_text['result']]}
+
+
+# image classifier
+def ToJPG(image_path:str) :
+    '''
+    convert almost all image format(except .avif) to jpg format
+    '''
+    if image_path.endswith('avif') :
+        print(f"can't convert the {image_path}\nbecause .avif format")
+    elif not image_path.endswith('jpg') :
+        image = Image.open(image_path).convert('RGB')
+        image_name = image_path.split('.')[:-1]
+        save_path = ''.join(image_name).strip('/')
+        save_path = f'{save_path}.jpg'
+        image.save(save_path)
+        os.remove(image_path)
+    
+    return save_path
+
+def toTensor(image_path: str) :
+    IMAGE_SIZE = 224
+    mean =  torch.Tensor([0.5106, 0.5007, 0.4396])
+    std =  torch.Tensor([0.2820, 0.2669, 0.2883])
+
+    transform = t.Compose([
+        torchvision.io.read_image,
+        t.ToPILImage(),
+        t.Resize(IMAGE_SIZE),
+        t.ToTensor(),
+        t.Normalize(mean, std)
+    ])
+    return transform(image_path)
+
+def predict(image_tensor:torch.tensor, classNames=classNames) :
+    device = 'cuda' if torch.cuda.is_available() else 'cpu'
+    WEIGHTS_PATH = './static/files/clf-image/weights/best_EffNetB0v2_weights_6.pt'
+
+    # model
+    class EffNetB0(nn.Module) :
+        def __init__(self, num_class: int) :
+            super(EffNetB0, self).__init__()
+
+            self.layers = efficientnet_b0()
+            self.layers.classifier[1] = nn.Sequential(
+                nn.Linear(1280, num_class),
+            )
+
+        def forward(self, x) :
+            x = self.layers(x)
+            return x
+        
+    # load model
+    model = EffNetB0(num_class=len(classNames)).to(device)
+    model.load_state_dict(torch.load(f=WEIGHTS_PATH, map_location=device))
+
+    model.eval()
+    with torch.inference_mode() :
+        predict = model(image_tensor.to(device).unsqueeze(dim=0))
+        probas = torch.softmax(predict, dim=1) 
+
+    confs_idx_10 = torch.argsort(probas[0], descending=True)[:10].numpy()
+    confs_probas_10 = probas[0][confs_idx_10].numpy()
+    confs_class = np.array(classNames)[confs_idx_10]
+
+    return confs_probas_10, confs_class

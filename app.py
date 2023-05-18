@@ -1,5 +1,7 @@
 from flask import Flask, render_template, jsonify, request, redirect
 from __function__ import transcript_list, download_transcript, Romanji2Hiragana, Romanji2Katakana, grammarChecker
+from __function__ import ToJPG, toTensor, predict
+import os
 
 app = Flask(__name__)
 
@@ -37,6 +39,41 @@ def convertlangstuff(C, text) :
         results = grammarChecker(text)
     return jsonify(results)
 
+
+# image classifier 
+@app.route('/what-is-this-animal' , methods=['GET', 'POST'])
+def wsta_upload_page() :
+    if request.method == 'POST' :
+        image_file = request.files['imageFile']
+        if image_file.filename.endswith('avif') :
+            alert = 'Please do not upload .avif file'
+            return render_template('upload-clf.html', alert=alert)
+        
+        # clear all images for reducing storage
+        dir_path = 'static/files/clf-image'
+        files_path = [ os.path.join(dir_path, image_name) for image_name in os.listdir(dir_path) if image_name != 'weights']
+        [os.remove(file) for file in files_path]
+
+        save_path = f'{dir_path}/{image_file.filename}'
+        image_file.save(dst=save_path)
+        # .any -> .jpg
+        if not image_file.filename.endswith('jpg') :
+            save_path = ToJPG(image_path=save_path)
+        
+        # prediction
+        try :
+            image = toTensor(image_path=save_path)
+            probas, pred_class = predict(image)
+            probas = probas*100
+            confs_probas = probas[:5].tolist()
+            confs_class = pred_class[:5].tolist()
+            predict_texts = [f'{a:.2f}% {b}' for a,b in zip(confs_probas, confs_class)]
+        except :
+            return render_template('upload-clf.html', alert='something went wrong with the image')
+
+        return render_template('predict-clf.html', image_url=save_path, predicts=predict_texts)
+
+    return render_template('upload-clf.html')
 
 if __name__ == '__main__' :
     app.run(debug=True)

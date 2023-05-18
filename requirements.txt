@@ -2,3 +2,6 @@ Flask
 gunicorn
 youtube_transcript_api
 gingerit
+torch
+torchvision
+Pillow
