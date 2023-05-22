@@ -1,7 +1,7 @@
-from flask import Flask, render_template, jsonify, request, redirect
-from __function__ import transcript_list, download_transcript, Romanji2Hiragana, Romanji2Katakana, grammarChecker
-from __function__ import ToJPG, toTensor, predict
 import os
+from flask import Flask, render_template, jsonify, request, redirect
+from __function__ import ToJPG, toTensor, predict
+from __function__ import transcript_list, download_transcript, Romanji2Hiragana, Romanji2Katakana, grammarChecker
 
 app = Flask(__name__)
 
@@ -51,8 +51,8 @@ def wsta_upload_page() :
         
         # clear all images for reducing storage
         dir_path = 'static/files/clf-image'
-        files_path = [ os.path.join(dir_path, image_name) for image_name in os.listdir(dir_path) if image_name != 'weights']
-        [os.remove(file) for file in files_path]
+        files_path = [ os.path.join(dir_path, image_name) for image_name in os.listdir(dir_path) if image_name != 'weights' ]
+        [ os.remove(file) for file in files_path ]
 
         save_path = f'{dir_path}/{image_file.filename}'
         image_file.save(dst=save_path)

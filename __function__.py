@@ -35,7 +35,7 @@ def transcript_list(video_id) :
 def download_transcript(video_id, code) :
     transcripts = YouTubeTranscriptApi.list_transcripts(video_id)
     caption = transcripts.find_transcript([code]).fetch()
-    with open('static/files/yt-caption.txt', 'w', encoding='utf-8') as file :
+    with open('static/files/yt-caption.txt', 'w', encoding='utf-8-sig') as file :
         for line in caption :
             text = line['text'] 
             file.write(text + '\n')
