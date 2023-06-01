@@ -7,7 +7,8 @@ projectArr = [
     {'title': 'LangStuff', 'desc': 'A languages app Romanji to Kana using Python dictionaries, and a grammar checker API integrated dynamically using JS for enhanced functionality.', 'url': '/langStuff', 'image': 'static/images/lang-stuff.png'},
     {'title': 'What is this animal?', 'desc': 'Animal image classification using PyTorch with EfficientNet B0 fine-tuned model.', 'url': '/what-is-this-animal', 'image': 'static/images/what-is-this-animal.png'},
     {'title': 'Pycutter', 'desc': 'Remove the silent part from the video or audio, or keep it.', 'url': 'https://github.com/NickygenN1/pycutter', 'image': 'static/images/pycutter.png'},
-    {'title': 'Reddit to Youtube', 'desc': 'Automating the scraping of Reddit videos and uploading to YouTube', 'url': 'https://github.com/NickygenN1/youtube-automate', 'image': 'static/images/r2y.png'},
+    {'title': 'Reddit to Youtube', 'desc': 'Automating the scraping of Reddit videos and uploading to YouTube.', 'url': 'https://github.com/NickygenN1/youtube-automate', 'image': 'static/images/r2y.png'},
+    {'title': '6kjpcore', 'desc': '6k japanese vocabulary generate videos, Scraping 6k vocabulary from website then use moviepy for making videos.', 'url': 'https://github.com/NickygenN1/6kjpcore_generate_videos', 'image': 'static/images/6kjpcore.png'},
 ]
 
 const showProject = () => {
